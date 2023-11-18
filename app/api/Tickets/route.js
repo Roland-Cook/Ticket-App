@@ -18,7 +18,6 @@ export async function POST(req){
 
 export async function GET (){
     try{
-        console.log("cant find")
         const tickets = await Ticket.find();
         return NextResponse.json({tickets}, {status:200})
     }

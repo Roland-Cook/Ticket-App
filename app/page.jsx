@@ -18,7 +18,6 @@ const getTickets = async () => {
   }
 }
 
-
 const Dashboard = async () => {
 
   const { tickets } = await getTickets()

@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ticket Master
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Getting started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Cosmos was created using Django for the backend and react for the front end. This application is fully containerized using Docker. To run the application please utilize our docker compose file. While in your terminal navigate to this project and in the parent directory please run the command "docker compose build" followed by "docker compose up". 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Application Details
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Ticket Master is a React and Next.js-powered ticketing app with MongoDB integration, simplifies issue management for teams. Its intuitive interface, and customizable workflows empower teams to resolve issues efficiently.
 
-## Learn More
+Leveraging the use of MongoDB, Ticket Master stores and retrieves data efficiently, ensuring high performance and reliability. Benefit from the flexibility of a NoSQL database to adapt to changing requirements.
 
-To learn more about Next.js, take a look at the following resources:
+Users can easily create new tickets, providing detailed information about the issues they encounter. This application supports , reading, creating, updating, and deleteing tickets that were created.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This application was created so I could gain a better understanding of Next.js and mongoDB. I made sure to take full advantages of all the features that next has to offer including its new app router and so many other features. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I've also made the entire application fully responsive on all screen sizes. Using tailwind allowed me to do this with little to no difficulty. Please see the examples below to get a better idea of how the application is working and how it looks on different size screens.
+***
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# CRUD
+
+
+<h3> The home page allows users to see all the tickets created and the information contained in those tickets. Information such as the priority level, the title, the description, the progress and the date/time the ticket was created. </h3>
+
+![grab-landing-page](public/images/Home.png)
+
+<h3> Users can click on a ticket to view the unique ticket in detail, they can also edit information about the ticket. </h3>
+
+![grab-landing-page](public/images/Update.png)
+
+
+
+<h3> Clicking the ticket icon on top left will bring users to a new page that allows them to create a ticket. </h3>
+
+![grab-landing-page](public/images/Create.png)
+
+
+<h3> This application is fully responsive on all screen sizes. Utilizing tailwind helped in this process. Here you can see the application on medium and small devices. </h3>
+
+![grab-landing-page](public/images/Medium.png)
+
+![grab-landing-page](public/images/Small.png)
+
+
+
+
+
+## Technologies 
+HTML, CSS, JS, React, Next.js, Tailwind, MongoDB
